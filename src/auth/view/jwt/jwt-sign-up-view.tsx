@@ -137,7 +137,7 @@ export function JwtSignUpView() {
   return (
     <>
       <FormHead
-        title="Get started with Bramble today"
+        title="Get started with Maildnd today"
         description={
           <>
             {`Already have an account? `}

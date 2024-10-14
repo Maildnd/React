@@ -21,7 +21,7 @@ export type ConfigValue = {
 // ----------------------------------------------------------------------
 
 export const CONFIG: ConfigValue = {
-  appName: 'Bramble',
+  appName: 'Maildnd',
   appVersion: packageJson.version,
   serverUrl: import.meta.env.VITE_SERVER_URL ?? 'http://localhost:4000',
   assetsDir: import.meta.env.VITE_ASSETS_DIR ?? '',

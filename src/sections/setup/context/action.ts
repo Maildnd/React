@@ -58,8 +58,8 @@ export const uploadFileToServer = async (cover_image: File) => {
     console.log('Upload file to server:', cover_image);
 
     const businessDetails = {
-      name: 'Bramble',
-      email: 'nrt@bramble.com',
+      name: 'Maildnd',
+      email: 'nrt@maildnd.com',
       phone: '+16787738141',
       country: 'United States',
       street: '42624 Golden Bear Ct',

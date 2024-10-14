@@ -42,7 +42,7 @@ export function SetupComplete({ onReset }: Props) {
         <OrderCompleteIllustration />
 
         <Typography>
-          Lets create your first marketing campaign on Bramble.
+          Lets create your first marketing campaign on Maildnd.
           <br />
         </Typography>
 
