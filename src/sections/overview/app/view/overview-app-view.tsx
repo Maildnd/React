@@ -62,7 +62,7 @@ export function OverviewAppView() {
         <Grid xs={12} md={12}>
           <AppWelcome
             title={`Welcome back 👋 \n ${displayName}`}
-            description="Make the most out of your next direct mail campaign by partnering with Bramble! "
+            description="Make the most out of your next direct mail campaign by partnering with Maildnd! "
             img={<SeoIllustration hideBackground />}
             action={
               <Button variant="contained" color="primary" onClick={createCampaignHandler}>

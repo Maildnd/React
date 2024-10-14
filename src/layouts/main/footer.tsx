@@ -173,7 +173,7 @@ export function HomeFooter({ sx }: HomeFooterProps) {
         <Logo />
         <Box sx={{ mt: 1, typography: 'caption' }}>
           © All rights reserved.
-          <br /> made by Bramble.
+          <br /> made by Maildnd.
         </Box>
       </Container>
     </Box>

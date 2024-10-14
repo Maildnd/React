@@ -12,14 +12,14 @@ export function TermsOfService() {
       </Box>
 
       <Typography>
-        Last updated March 06, 2023 AGREEMENT TO OUR LEGAL TERMS We are Bramble, Inc., doing
-        business as Bramble , a company registered in New York, United States at 108 Ferris Pl,
-        Ithaca, NY 14850. We operate the website https://bramble-mail.com (the), as well as any
-        other related products and services that refer or link to these legal terms () (). You can
-        contact us by phone at 6072624126, email at hi@Bramble.com, or by mail to 1390 Market
-        Street, Suite 200, San Francisco, CA 94102, United States. These Legal Terms constitute a
-        legally binding agreement made between you, whether personally or on behalf of an entity ,
-        and Bramble, Inc., concerning your access to and use of the Services. You agree that by
+        Last updated March 06, 2023 AGREEMENT TO OUR LEGAL TERMS We are Maildnd, Inc., doing
+        business as Maildnd , a company registered in New York, United States at 108 Ferris Pl,
+        Ithaca, NY 14850. We operate the website https://Maildnd.com (the), as well as any other
+        related products and services that refer or link to these legal terms () (). You can contact
+        us by phone at 6072624126, email at support@Maildnd.com, or by mail to 1390 Market Street,
+        Suite 200, San Francisco, CA 94102, United States. These Legal Terms constitute a legally
+        binding agreement made between you, whether personally or on behalf of an entity , and
+        Maildnd, Inc., concerning your access to and use of the Services. You agree that by
         accessing the Services, you have read, understood, and agreed to be bound by all of these
         Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY
         PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY. Supplemental
@@ -69,7 +69,7 @@ export function TermsOfService() {
         transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose
         whatsoever, without our express prior written permission. If you wish to make any use of the
         Services, Content, or Marks other than as set out in this section or elsewhere in our Legal
-        Terms, please address your request to: hi@Bramble.com. If we ever grant you the permission
+        Terms, please address your request to: hi@Maildnd.com. If we ever grant you the permission
         to post, reproduce, or publicly display any part of our Services or Content, you must
         identify us as the owners or licensors of the Services, Content, or Marks and ensure that
         any copyright or proprietary notice appears or is visible on posting, reproducing, or

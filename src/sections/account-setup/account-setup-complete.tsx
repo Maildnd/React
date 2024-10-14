@@ -46,7 +46,7 @@ export function SetupComplete() {
         <OrderCompleteIllustration />
 
         <Typography>
-          Lets create your first marketing campaign on Bramble.
+          Lets create your first marketing campaign on Maildnd.
           <br />
         </Typography>
 
