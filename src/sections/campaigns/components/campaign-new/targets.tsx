@@ -41,8 +41,8 @@ type zipCodeOptionsType = {
 
 const Targets = zod.object({
   target_type: zod.string().min(1, { message: 'Target Type is required!' }),
-  lat: zod.number().min(1, { message: 'Latitude must be greater than zero!' }),
-  lng: zod.number().min(1, { message: 'Longitude must be greater than zero!' }),
+  lat: zod.number().refine((val) => val !== 0, { message: 'Latitude cannot be zero!' }),
+  lng: zod.number().refine((val) => val !== 0, { message: 'Longitude cannot be zero!' }),
   radius: zod.number(),
   zip_codes: zod.array(zod.string()),
   county: zod.string(),
@@ -144,8 +144,8 @@ const CampaignTargets = () => {
               .array(zod.string())
               .min(1, { message: 'At least one zip code is required!' });
 
-            Targets.shape.lat = zod.number();
-            Targets.shape.lng = zod.number();
+            Targets.shape.lat = zod.number().refine((val) => true);
+            Targets.shape.lng = zod.number().refine((val) => true);
             setValue('lat', 0);
             setValue('lng', 0);
             setValue('radius', 0);
@@ -153,6 +153,12 @@ const CampaignTargets = () => {
           } else if (target_type === 'map') {
             setValue('residents_count', 0);
             setValue('zip_codes', []);
+            Targets.shape.lat = zod
+              .number()
+              .refine((val) => val !== 0, { message: 'Latitude cannot be zero!' });
+            Targets.shape.lng = zod
+              .number()
+              .refine((val) => val !== 0, { message: 'Longitude cannot be zero!' });
             Targets.shape.zip_codes = zod.array(zod.string());
           }
           setLoading(false);
