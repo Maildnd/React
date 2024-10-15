@@ -4,20 +4,14 @@ import { useContext } from 'react';
 
 import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
-import { useTheme } from '@mui/material/styles';
-
-import { useBoolean } from 'src/hooks/use-boolean';
 
 import { Logo } from 'src/components/logo';
 
 import { AuthContext } from 'src/auth/context/auth-context';
 
 import { Main } from './main';
-import { NavMobile } from './nav/mobile';
-import { MenuButton } from '../components/menu-button';
 import { LayoutSection } from '../core/layout-section';
 import { HeaderSection } from '../core/header-section';
-import { navData as mainNavData } from '../config-nav-main';
 import { SignInButton } from '../components/sign-in-button';
 import { SignUpButton } from '../components/sign-up-button';
 import { DashboradButton } from '../components/dashboard-button';
@@ -40,13 +34,8 @@ export type MainLayoutProps = {
 export function MainLayout({ sx, data, children, header }: MainLayoutProps) {
   const userState = useContext(AuthContext);
   const user = userState?.user;
-  const theme = useTheme();
-
-  const mobileNavOpen = useBoolean();
 
   const layoutQuery: Breakpoint = 'md';
-
-  const navData = data?.nav ?? mainNavData;
 
   return (
     <LayoutSection
@@ -65,20 +54,6 @@ export function MainLayout({ sx, data, children, header }: MainLayoutProps) {
             ),
             leftArea: (
               <>
-                {/* -- Nav mobile -- */}
-                <MenuButton
-                  onClick={mobileNavOpen.onTrue}
-                  sx={{
-                    mr: 1,
-                    ml: -1,
-                    [theme.breakpoints.up(layoutQuery)]: { display: 'none' },
-                  }}
-                />
-                <NavMobile
-                  data={navData}
-                  open={mobileNavOpen.value}
-                  onClose={mobileNavOpen.onFalse}
-                />
                 {/* -- Logo -- */}
                 <Logo />
               </>
