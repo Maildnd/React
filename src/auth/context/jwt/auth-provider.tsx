@@ -29,6 +29,9 @@ export function AuthProvider({ children }: Props) {
       const accessToken = sessionStorage.getItem(STORAGE_KEY);
       if (accessToken && isValidToken(accessToken)) {
         const session = await axios.post(endpoints.auth.userSession);
+        if (session.data) {
+          console.log('Session Successful!');
+        }
         const { user, plans } = session.data;
         if (user) {
           setState({ user: { ...user, accessToken }, loading: false, subscriptionPlans: plans });
