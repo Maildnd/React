@@ -182,7 +182,12 @@ export function JwtSignUpView() {
         <Typography
           variant="body2"
           color="primary"
-          onClick={() => handleOpenDialog('privacyPolicy')}
+          onClick={() =>
+            window.open(
+              'https://app.termly.io/policy-viewer/policy.html?policyUUID=316e8a5c-652f-4992-9898-6649c7e0fc99',
+              '_blank'
+            )
+          }
           sx={{ cursor: 'pointer', display: 'inline' }}
         >
           Privacy Policy
